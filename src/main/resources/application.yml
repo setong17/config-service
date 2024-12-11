@@ -10,9 +10,12 @@ server:
 spring:
   application:
     name: config-service
-    cloud:
-      config:
-        server:
-          git:
-            uri: https://github.com/setong17/config-service.git
-            default-label: main
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/setong17/config-repo
+          default-label: main
+          timeout: 5
+          clone-on-start: true
+          force-pull: true
