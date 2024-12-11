@@ -14,5 +14,5 @@ spring:
       config:
         server:
           git:
-            uri: https://github.com
+            uri: https://github.com/setong17/config-service.git
             default-label: main
